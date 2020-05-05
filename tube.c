@@ -65,7 +65,7 @@ int main(int argc, char **argv)
     if (child1 > 0)
     {
         fprintf(stderr, "%s: $? = %d\n", instruct1[0], WEXITSTATUS(state1));
-        fprintf(stderr, "%s: $? = %d\n", instruct2[0], WEXITSTATUS(state1));
+        fprintf(stderr, "%s: $? = %d\n", instruct2[0], WEXITSTATUS(state2));
         close(pipefd[0]);
         close(pipefd[1]);
     }
